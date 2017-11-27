@@ -1,29 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:background="@color/colorPrimary"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context="com.mvp.lt.andfixtest.MainActivity">
 
     <Button
-       android:onClick="testBug"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="testBug"
         android:text="测试"/>
 
     <Button
-        android:onClick="andFix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
+        android:onClick="andFix"
         android:text="阿里修复"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="新增加"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="2dp"/>
+    <EditText
+        android:id="@+id/verry_name"
+        android:hint="用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/verry_pws"
+        android:hint="密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/verry_login"
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/verry_text1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
 </LinearLayout>
